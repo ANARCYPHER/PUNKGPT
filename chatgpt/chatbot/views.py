@@ -14,7 +14,7 @@ def index(request):
 
         # Do API Stuff
         # Set API Key
-        openai.api_key = "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"
+        openai.api_key = "Put your API Key here"
         # Create OpenAI Instance
         openai.Model.list()
         try:
@@ -33,7 +33,7 @@ def index(request):
             response = (response["choices"][0]["text"]).strip()
 
             # Logic for Past responses
-            if "41elder41" in past_responses:
+            if "Put your password API Key here" in past_responses:
                 past_responses = response
             else:
                 past_responses = f"{past_responses}<br/><br/>{response}"
